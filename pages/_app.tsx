@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
-        title="LiveKit Meet | Conference app build with  Open Source"
+        title=" Meet| Conference app build with "
         titleTemplate="%s"
         defaultTitle=" Meet | Conference app build with  open source"
         description=" is an open source WebRTC project that gives you everything needed to build scalable and real-time audio and/or video experiences in your applications."
