@@ -1,0 +1,8 @@
+const { LIVEKIT_API_KEY, LIVEKIT_API_SECRET, LIVEKIT_URL } = process.env;
+
+export const ENV: any = {
+  LIVEKIT_API_KEY,
+  LIVEKIT_API_SECRET,
+  LIVEKIT_URL,
+  NEXT_PUBLIC_LK_TOKEN_ENDPOINT: '/api/token',
+};
