@@ -8,27 +8,27 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
-        title="LiveKit Meet | Conference app build with LiveKit Open Source"
+        title="LiveKit Meet | Conference app build with  Open Source"
         titleTemplate="%s"
-        defaultTitle="LiveKit Meet | Conference app build with LiveKit open source"
-        description="LiveKit is an open source WebRTC project that gives you everything needed to build scalable and real-time audio and/or video experiences in your applications."
-        twitter={{
-          handle: '@livekitted',
-          site: '@livekitted',
-          cardType: 'summary_large_image',
-        }}
-        openGraph={{
-          url: 'https://meet.livekit.io',
-          images: [
-            {
-              url: 'https://meet.livekit.io/images/livekit-meet-open-graph.png',
-              width: 2000,
-              height: 1000,
-              type: 'image/png',
-            },
-          ],
-          site_name: 'LiveKit Meet',
-        }}
+        defaultTitle=" Meet | Conference app build with  open source"
+        description=" is an open source WebRTC project that gives you everything needed to build scalable and real-time audio and/or video experiences in your applications."
+        // twitter={{
+        //   handle: '@livekitted',
+        //   site: '@livekitted',
+        //   cardType: 'summary_large_image',
+        // }}
+        // openGraph={{
+        //   url: 'https://meet.livekit.io',
+        //   images: [
+        //     {
+        //       url: 'https://meet.livekit.io/images/livekit-meet-open-graph.png',
+        //       width: 2000,
+        //       height: 1000,
+        //       type: 'image/png',
+        //     },
+        //   ],
+        //   site_name: 'LiveKit Meet',
+        // }}
         additionalMetaTags={[
           {
             property: 'theme-color',
