@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 import { AccessToken } from 'livekit-server-sdk';

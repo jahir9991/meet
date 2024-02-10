@@ -11,7 +11,7 @@ export function getLiveKitURL(region?: string | string[]): string {
   if (region && !Array.isArray(region)) {
     targetKey = `LIVEKIT_URL_${region}`.toUpperCase();
   }
-  const url = ENV[targetKey];
+  const url = process.env[targetKey];
   if (!url) {
     throw new Error(`${targetKey} is not defined`);
   }

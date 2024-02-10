@@ -1,4 +1,3 @@
-export const runtime = 'experimental-edge';
 import type { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import { useRouter } from 'next/router';
 import React, { ReactElement, useState } from 'react';
