@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <DefaultSeo
         title="Persona Therapy"
         titleTemplate="%s"
-        defaultTitle=" Meet Rose | Conference app"
+        defaultTitle=" Persona Therapy"
         description=" is an open source WebRTC project that gives you everything needed to build scalable and real-time audio and/or video experiences in your applications."
         // twitter={{
         //   handle: '@livekitted',

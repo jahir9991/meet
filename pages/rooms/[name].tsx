@@ -47,7 +47,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Meet Rose</title>
+        <title>Persona Therapy</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
