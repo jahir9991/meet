@@ -50,17 +50,22 @@ function DemoMeetingTab() {
   };
   return (
     <div className={styles.roomList}>
+      <h1>Ongoing session</h1>
       <div className={styles.tabContent}>
         <div className={styles.roomTitle}>
-          <p style={{ margin: 0, color: 'black' }}>Room 1</p>
+          <p style={{ margin: 0, color: 'black', fontSize: '20px', fontWeight: 'bold' }}>
+            Recovering from trauma
+          </p>
           <div className={styles.isLive}>
-            <p style={{ margin: 0, color: 'green' }}>LIVE</p>
-            <img alt="" src="/images/wave.png" style={{ height: '44px', width: '44px' }} />
+            <p style={{ margin: 0, color: '#1f8cf9', fontWeight: 'bold', fontSize: '10px' }}>
+              LIVE
+            </p>
+            <img alt="" src="/gif/wavegif.gif" style={{ height: '44px', width: '44px' }} />
           </div>
         </div>
         <div className={styles.hostContainer}>
           <div className={styles.flexContainer}>
-            <img src="/images/user.png" alt="" style={{ height: '50px', width: '50px' }} />
+            <img src="/images/john.png" alt="" style={{ height: '50px', width: '50px' }} />
             <div className={styles.hostDetails}>
               <h4>John</h4>
               <p>8m ago - 8 participants</p>
@@ -68,11 +73,11 @@ function DemoMeetingTab() {
           </div>
           <div>
             <button
-              style={{ marginTop: '1rem', display: 'flex', alignItems: 'center' }}
+              style={{ display: 'flex', alignItems: 'center' }}
               className={`lk-button ${styles.buttonColor}`}
               onClick={startMeeting}
             >
-              Join room
+              Join session
             </button>
           </div>
         </div>
@@ -92,31 +97,36 @@ function DemoMeetingTab() {
           )}
         </div>
       </div>
+      <h1>Previous sessions</h1>
       <div className={styles.tabContent}>
         <div className={styles.roomTitle}>
-          <p style={{ margin: 0, color: 'black' }}>Room 2</p>
-          <div className={styles.isLive}>
-            <p style={{ margin: 0, color: 'green' }}>LIVE</p>
-            <img alt="" src="/images/wave.png" style={{ height: '44px', width: '44px' }} />
-          </div>
+          <p style={{ margin: 0, color: 'black', fontSize: '20px', fontWeight: 'bold' }}>
+            Grief journey support
+          </p>
+          {/* <div className={styles.isLive}>
+            <p style={{ margin: 0, color: '#1f8cf9', fontWeight: 'bold', fontSize: '10px' }}>
+              LIVE
+            </p>
+            <img alt="" src="/gif/wavegif.gif" style={{ height: '44px', width: '44px' }} />
+          </div> */}
         </div>
         <div className={styles.hostContainer}>
           <div className={styles.flexContainer}>
-            <img src="/images/user.png" alt="" style={{ height: '50px', width: '50px' }} />
+            <img src="/images/antti.png" alt="" style={{ height: '50px', width: '50px' }} />
             <div className={styles.hostDetails}>
               <h4>Kimmy</h4>
-              <p>4h ago - 8 participants</p>
+              <p>4 days ago - 8 participants</p>
             </div>
           </div>
-          <div>
+          {/* <div>
             <button
-              style={{ marginTop: '1rem', display: 'flex', alignItems: 'center' }}
+              style={{ display: 'flex', alignItems: 'center' }}
               className={`lk-button ${styles.buttonColor}`}
               onClick={startMeeting}
             >
               Join room
             </button>
-          </div>
+          </div> */}
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -136,18 +146,20 @@ function DemoMeetingTab() {
       </div>
       <div className={styles.tabContent}>
         <div className={styles.roomTitle}>
-          <p style={{ margin: 0, color: 'black' }}>Room 3</p>
+          <p style={{ margin: 0, color: 'black', fontSize: '20px', fontWeight: 'bold' }}>
+            Understanding your emotions
+          </p>
           <div className={styles.isLive}>
             {/* <p style={{ margin: 0, color: 'green' }}>LIVE</p> */}
-            <img alt="" src="/images/wave.png" style={{ height: '44px', width: '44px' }} />
+            {/* <img alt="" src="/images/wave.png" style={{ height: '44px', width: '44px' }} /> */}
           </div>
         </div>
         <div className={styles.hostContainer}>
           <div className={styles.flexContainer}>
-            <img src="/images/user.png" alt="" style={{ height: '50px', width: '50px' }} />
+            <img src="/images/kimmy.png" alt="" style={{ height: '50px', width: '50px' }} />
             <div className={styles.hostDetails}>
               <h4>Antti</h4>
-              <p>4h ago - 6 participants</p>
+              <p>7 days ago - 6 participants</p>
             </div>
           </div>
           {/* <div>
