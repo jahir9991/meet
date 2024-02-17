@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
-        title="Meet Rose | Conference app "
+        title="Persona Therapy"
         titleTemplate="%s"
         defaultTitle=" Meet Rose | Conference app"
         description=" is an open source WebRTC project that gives you everything needed to build scalable and real-time audio and/or video experiences in your applications."
