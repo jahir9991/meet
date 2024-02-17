@@ -4,12 +4,21 @@
 
 html {
   color-scheme: dark;
-  background-color: #111;
+  background-color: #ffffff;
 }
 
 html,
 body {
   overflow: hidden;
+}
+h2 {
+  color: black;
+}
+h4 {
+  color: black;
+}
+p {
+  color: black;
 }
 
 html,

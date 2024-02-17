@@ -49,24 +49,132 @@ function DemoMeetingTab() {
     }
   };
   return (
-    <div className={styles.tabContent}>
-      <p style={{ margin: 0 }}>Try Meet for free with our live demo project.</p>
-      <button style={{ marginTop: '1rem' }} className="lk-button" onClick={startMeeting}>
-        Start Meeting
-      </button>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-        <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}></div>
-        {e2ee && (
-          <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
-            <label htmlFor="passphrase">Passphrase</label>
-            <input
-              id="passphrase"
-              type="password"
-              value={sharedPassphrase}
-              onChange={(ev) => setSharedPassphrase(ev.target.value)}
-            />
+    <div className={styles.roomList}>
+      <div className={styles.tabContent}>
+        <div className={styles.roomTitle}>
+          <p style={{ margin: 0, color: 'black' }}>Room 1</p>
+          <div className={styles.isLive}>
+            <p style={{ margin: 0, color: 'green' }}>LIVE</p>
+            <img alt="" src="/images/wave.png" style={{ height: '44px', width: '44px' }} />
           </div>
-        )}
+        </div>
+        <div className={styles.hostContainer}>
+          <div className={styles.flexContainer}>
+            <img src="/images/user.png" alt="" style={{ height: '50px', width: '50px' }} />
+            <div className={styles.hostDetails}>
+              <h4>John</h4>
+              <p>8m ago - 8 participants</p>
+            </div>
+          </div>
+          <div>
+            <button
+              style={{ marginTop: '1rem', display: 'flex', alignItems: 'center' }}
+              className={`lk-button ${styles.buttonColor}`}
+              onClick={startMeeting}
+            >
+              Join room
+            </button>
+          </div>
+        </div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}></div>
+          {e2ee && (
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
+              <label htmlFor="passphrase">Passphrase</label>
+              <input
+                id="passphrase"
+                type="password"
+                value={sharedPassphrase}
+                onChange={(ev) => setSharedPassphrase(ev.target.value)}
+              />
+            </div>
+          )}
+        </div>
+      </div>
+      <div className={styles.tabContent}>
+        <div className={styles.roomTitle}>
+          <p style={{ margin: 0, color: 'black' }}>Room 2</p>
+          <div className={styles.isLive}>
+            <p style={{ margin: 0, color: 'green' }}>LIVE</p>
+            <img alt="" src="/images/wave.png" style={{ height: '44px', width: '44px' }} />
+          </div>
+        </div>
+        <div className={styles.hostContainer}>
+          <div className={styles.flexContainer}>
+            <img src="/images/user.png" alt="" style={{ height: '50px', width: '50px' }} />
+            <div className={styles.hostDetails}>
+              <h4>Kimmy</h4>
+              <p>4h ago - 8 participants</p>
+            </div>
+          </div>
+          <div>
+            <button
+              style={{ marginTop: '1rem', display: 'flex', alignItems: 'center' }}
+              className={`lk-button ${styles.buttonColor}`}
+              onClick={startMeeting}
+            >
+              Join room
+            </button>
+          </div>
+        </div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}></div>
+          {e2ee && (
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
+              <label htmlFor="passphrase">Passphrase</label>
+              <input
+                id="passphrase"
+                type="password"
+                value={sharedPassphrase}
+                onChange={(ev) => setSharedPassphrase(ev.target.value)}
+              />
+            </div>
+          )}
+        </div>
+      </div>
+      <div className={styles.tabContent}>
+        <div className={styles.roomTitle}>
+          <p style={{ margin: 0, color: 'black' }}>Room 3</p>
+          <div className={styles.isLive}>
+            {/* <p style={{ margin: 0, color: 'green' }}>LIVE</p> */}
+            <img alt="" src="/images/wave.png" style={{ height: '44px', width: '44px' }} />
+          </div>
+        </div>
+        <div className={styles.hostContainer}>
+          <div className={styles.flexContainer}>
+            <img src="/images/user.png" alt="" style={{ height: '50px', width: '50px' }} />
+            <div className={styles.hostDetails}>
+              <h4>Antti</h4>
+              <p>4h ago - 6 participants</p>
+            </div>
+          </div>
+          {/* <div>
+            <button
+              style={{ marginTop: '1rem', display: 'flex', alignItems: 'center' }}
+              className={`lk-button ${styles.buttonColor}`}
+              onClick={startMeeting}
+            >
+              Join room
+            </button>
+          </div> */}
+        </div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}></div>
+          {e2ee && (
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
+              <label htmlFor="passphrase">Passphrase</label>
+              <input
+                id="passphrase"
+                type="password"
+                value={sharedPassphrase}
+                onChange={(ev) => setSharedPassphrase(ev.target.value)}
+              />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -94,7 +202,7 @@ function CustomConnectionTab({ label }: { label: string }) {
   return (
     <form className={styles.tabContent} onSubmit={onSubmit}>
       <p style={{ marginTop: 0 }}>
-        Connect  Meet with a custom server using LiveKit Cloud or LiveKit Server.
+        Connect Meet with a custom server using LiveKit Cloud or LiveKit Server.
       </p>
       <input
         id="serverUrl"
@@ -168,7 +276,7 @@ const Home = ({ tabIndex }: InferGetServerSidePropsType<typeof getServerSideProp
       <main className={styles.main} data-lk-theme="default">
         <div className="header">
           {/* <img src="/images/livekit-meet-home.svg" alt="LiveKit Meet" width="360" height="45" /> */}
-          Hello
+          Choose your room
         </div>
         <DemoMeetingTab />
       </main>

@@ -7,7 +7,34 @@
   padding-bottom: 100px;
   overflow: auto;
 }
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.hostDetails {
+  padding: 0px 10px;
+}
 
+.roomTitle {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 4rem;
+  align-items: center;
+}
+.isLive {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 5px;
+  align-items: center;
+}
+.hostContainer {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 10px;
+  align-items: center;
+}
 .tabContainer {
   width: 100%;
   max-width: 500px;
@@ -34,6 +61,11 @@
   flex-direction: column;
   gap: 0.75rem;
   padding: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 0.5rem;
+  border: 1px solid #000000;
+  border-radius: 2.43rem;
+  margin-bottom: 15px;
+}
+.buttonColor {
+  background-color: #003db8;
+  border-radius: 3.125rem;
 }
