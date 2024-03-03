@@ -72,13 +72,15 @@ function DemoMeetingTab() {
             </div>
           </div>
           <div>
-            <button
+            <a
               style={{ display: 'flex', alignItems: 'center' }}
               className={`lk-button ${styles.buttonColor}`}
-              onClick={startMeeting}
+              href="http://34.118.85.30:3000/"
+              target="_blank"
+              // onClick={startMeeting}
             >
               Join session
-            </button>
+            </a>
           </div>
         </div>
 

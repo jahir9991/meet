@@ -8,9 +8,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
-        title="Persona Therapy"
+        title="DFL App"
         titleTemplate="%s"
-        defaultTitle=" Persona Therapy"
+        defaultTitle=" DFL App"
         description=" is an open source WebRTC project that gives you everything needed to build scalable and real-time audio and/or video experiences in your applications."
         // twitter={{
         //   handle: '@livekitted',
